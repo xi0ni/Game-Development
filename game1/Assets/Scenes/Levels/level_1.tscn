@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=4 uid="uid://cq5hs40vj65na"]
+
+[ext_resource type="PackedScene" uid="uid://dgthxujy2hj3i" path="res://Assets/Scenes/player.tscn" id="1_6s2ob"]
+[ext_resource type="Texture2D" uid="uid://byp6hkwyylg4i" path="res://Assets/Sprites/LevelMap.png" id="2_asalx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6s2ob"]
+texture = ExtResource("2_asalx")
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_un3gw"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_6s2ob")
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_6s2ob")]
+position = Vector2(12, -27)
+scale = Vector2(0.07, 0.07)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAP//AAADAAMAAAABAP//AAADAAMAAAACAP//AAADAAMAAAADAP//AAADAAMAAAAEAP//AAADAAMAAAAFAP//AAADAAMAAAAGAP//AAADAAMAAAAHAP//AAADAAMAAAAIAP//AAADAAMAAAAJAP//AAADAAMAAAAKAP//AAADAAMAAAALAP//AAADAAMAAAAMAP//AAADAAMAAAANAP//AAADAAMAAAAOAP//AAADAAMAAAAPAP//AAADAAMAAAAQAP//AAADAAMAAAARAP//AAADAAMAAAASAP//AAADAAMAAAATAP//AAADAAMAAAAUAP//AAADAAMAAAAVAP//AAADAAMAAAAFAP7/AAADAAQAAAAGAP7/AAADAAQAAAAHAP7/AAADAAQAAAAIAP7/AAADAAQAAAAGAP3/AAADAAQAAAAHAP3/AAADAAQAAAAIAP3/AAADAAQAAAAIAPz/AAADAAQAAAAHAPz/AAADAAQAAAAIAPv/AAADAAQAAAALAPv/AAADAAQAAAALAPz/AAADAAQAAAALAP3/AAADAAQAAAALAP7/AAADAAQAAAAMAP7/AAADAAQAAAANAP7/AAADAAQAAAAOAP7/AAADAAQAAAANAP3/AAADAAQAAAAMAP3/AAADAAQAAAAMAPz/AAADAAQAAAA=")
+tile_set = SubResource("TileSet_un3gw")
