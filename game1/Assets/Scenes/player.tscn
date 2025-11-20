@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dgthxujy2hj3i"]
 
-[ext_resource type="Texture2D" uid="uid://cef611ycbn1wf" path="res://Assets/Sprites/Player.png" id="1_6cd4h"]
+[ext_resource type="Texture2D" uid="uid://cwvs7iwtbgnc7" path="res://Assets/Sprites/Player.png" id="1_6cd4h"]
 [ext_resource type="Script" uid="uid://487nplo2hgkn" path="res://Assets/Scripts/player_controller.gd" id="1_7dd06"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_egera"]
@@ -19,7 +19,7 @@ shape = SubResource("RectangleShape2D_egera")
 root_node = NodePath("../..")
 
 [node name="Sprite2D" type="Sprite2D" parent="Animator"]
-position = Vector2(-10, -10)
+position = Vector2(-9.999992, -9.999996)
 scale = Vector2(20, 20)
 texture = ExtResource("1_6cd4h")
 region_enabled = true
