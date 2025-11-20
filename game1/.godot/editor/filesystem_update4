@@ -1,0 +1,3 @@
+res://Assets/Scenes/player.tscn
+res://Assets/Scripts/player_controller.gd
+res://Assets/Scenes/Levels/level_1.tscn
